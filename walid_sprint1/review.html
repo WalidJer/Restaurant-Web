@@ -1,0 +1,179 @@
+<!-------------------------- Walid Jerjawi--------------
+     ----------------------- Sprint#1------------------
+     --------------------October 20-Novemebr 01--------->
+
+     <!DOCTYPE html>
+     <html lang="en">
+       <head>
+         <meta charset="UTF-8" />
+         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+         <link rel="stylesheet" href="styles.css" />
+         <link
+           href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap"
+           rel="stylesheet"
+         />
+         <link
+           href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+           rel="stylesheet"
+         />
+         <link
+           href="https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&display=swap"
+           rel="stylesheet"
+         />
+         <link
+           rel="stylesheet"
+           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+         />
+     
+         <link
+           rel="stylesheet"
+           href="https://cdnjs.cloudflare.com/ajax/libs/paymentfont/1.2.5/css/paymentfont.min.css"
+         />
+     
+         <title>Gary Blue's Eatery</title>
+         <link
+           rel="icon"
+           type="image/png"
+           sizes="32x32"
+           href="./Images/favicon-32x32.png"
+         />
+       </head>
+       <body>
+         <div class="mainbox">
+           <nav class="mainNav">
+             <div class="navside">
+               <a href="./index.html">HOME&nbsp;&nbsp; &nbsp; &nbsp;</a>
+               <div class="dropdown">
+                 <a href="#">ABOUT &#9662; &nbsp;&nbsp; &nbsp; </a>
+                 <div class="dropdown-menu">
+                   <a href="#"><i class="fas fa-user-tie"></i> Gary Deal</a>
+                   <a href="#"><i class="fas fa-users"></i> The Team</a>
+                   <a href="#"><i class="fas fa-book"></i> Our Story</a>
+                   <a href="#"><i class="fas fa-briefcase"></i> Career</a>
+                 </div>
+               </div>
+               <div class="dropdown">
+                <a href="./menu.html">MENUS &#9662; &nbsp;&nbsp; &nbsp; &nbsp;</a>
+                <div class="dropdown-menu">
+                  <a href="./menu.html#lunch-section"><i class="fas fa-utensils"></i> LUNCH</a>
+                  <a href="./menu.html#dinner-section"><i class="fas fa-pizza-slice"></i> DINNER</a>
+                  <a href="./menu.html#dinner-section"><i class="fas fa-ice-cream"></i> DESSERTS</a>
+                  <a href="./menu.html#dinner-section"><i class="fas fa-cocktail"></i> DRINKS</a>
+                </div>
+              </div>
+     
+               <!-- <a href="#">PRIVATE ROOMS</a> -->
+               <a href="./review.html"><span class="udrLine">RATE US</span></a>
+             </div>
+             <div class="navCenter">
+               <p>Gary's Eatery</p>
+             </div>
+             <div class="navside" id="navR">
+               <a href="./orderOnline.html">ORDER ONLINE&nbsp;&nbsp;&nbsp;&nbsp; </a>
+               <a href="#">RESERVATIONS &nbsp;&nbsp;&nbsp;&nbsp; </a>
+               <a href="./contact.html">CONTACT US </a>
+             </div>
+           </nav>
+
+
+           <header class="review-header">
+            <img src="./Images/review.jpg" alt="review banner">
+            <div class="overlay ">
+            <div class="review-content">
+                <p>Leave a Review & Help Us Improve</p>
+            </div>
+            </div>
+
+           </header>
+
+
+
+           <div class="review-box">
+            <h2>Give feedback</h2>
+        
+            <div class="error-message" id="error-message"></div>
+            <p>How did we do?</p>
+            <div class="rating-input" id="rating-stars">
+              <span class="star" value="1">&#9733;</span>
+              <span class="star" value="2">&#9733;</span>
+              <span class="star" value="3">&#9733;</span>
+              <span class="star" value="4">&#9733;</span>
+              <span class="star" value="5">&#9733;</span>
+            </div>
+            <p> Care to share more about it?</p>
+        
+            <textarea id="new-comment"  placeholder="Write your review..."></textarea>
+            <button id="submit-comment">PUBLISH FEEDBACK</button>
+        
+            <div class="comments-list" id="comments-list"></div>
+          </div>
+     
+
+     
+           <footer class="footer">
+             <div class="footer-container">
+               <div class="footer-column">
+                 <h3>ABOUT</h3>
+                 <ul>
+                   <li><a href="#">THE GARY DEAL</a></li>
+                   <li><a href="#">OUR STORY</a></li>
+                   <li><a href="#">THE TEAM</a></li>
+                   <li><a href="#">CAREERS</a></li>
+                 </ul>
+               </div>
+     
+               <div class="footer-column">
+                <h3>MENUS</h3>
+                <ul>
+                  <li><a href="./menu.html#lunch-section">LUNCH</a></li>
+                  <li><a href="./menu.html#dinner-section">DINNER</a></li>
+                  <li><a href="./menu.html#desserts-section">DESSERTS</a></li>
+                  <li><a href="./menu.html#drinks-section">DRINKS</a></li>
+                </ul>
+              </div>
+     
+               <div class="footer-column">
+                 <h3>GET IN TOUCH</h3>
+                 <ul>
+                   <li><a href="#">PRIVATE ROOMS</a></li>
+                   <li><a href="#">GIFT CARD</a></li>
+                   <li><a href="#">RESERVATIONS</a></li>
+                   <li><a href="./contact.html">CONTACT US</a></li>
+                 </ul>
+               </div>
+     
+               <div class="footer-column contact-info">
+                 <h3>CALL US</h3>
+                 <p>(123) 456 7890</p>
+                 <a href="./orderOnline.html"><button class="buttonborder">ORDER ONLINE</button></a>
+               </div>
+             </div>
+     
+             <div class="footer-bottom">
+               <div class="payment-icons">
+                 <i class="pf pf-visa" title="Visa"></i>
+                 <i class="pf pf-mastercard" title="Mastercard"></i>
+                 <i class="pf pf-american-express" title="American Express"></i>
+                 <i class="pf pf-paypal" title="PayPal"></i>
+                 <i class="pf pf-discover" title="Discover"></i>
+               </div>
+     
+               <div class="social-icons">
+                 <a href="#"><i class="fab fa-facebook-f"></i></a>
+                 <a href="#"><i class="fab fa-twitter"></i></a>
+                 <a href="#"><i class="fab fa-yelp"></i></a>
+                 <a href="#"><i class="fas fa-utensils"></i></a>
+                 <a href="#"><i class="fab fa-tripadvisor"></i></a>
+               </div>
+             </div>
+     
+             <div class="footer-bottom-text">
+               <p>© 2024 GARY'S EATERY — All rights reserved.</p>
+             </div>
+           </footer>
+     
+           <script src="./script3.js"></script>
+         </div>
+       </body>
+     </html>
+     

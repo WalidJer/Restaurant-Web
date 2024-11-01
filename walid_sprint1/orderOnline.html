@@ -1,0 +1,639 @@
+<!-------------------------- Walid Jerjawi--------------
+     ----------------------- Sprint#1------------------
+     --------------------October 20-Novemebr 01--------->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/paymentfont/1.2.5/css/paymentfont.min.css"
+    />
+
+    <title>Gary Blue's Eatery</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./Images/favicon-32x32.png"
+    />
+  </head>
+  <body>
+    <div class="mainbox">
+      <nav class="mainNav">
+        <div class="navside">
+          <a href="./index.html">HOME&nbsp;&nbsp; &nbsp; &nbsp;</a>
+          <div class="dropdown">
+            <a href="#">ABOUT &#9662; &nbsp;&nbsp; &nbsp; </a>
+            <div class="dropdown-menu">
+              <a href="#"><i class="fas fa-user-tie"></i> Gary Deal</a>
+              <a href="#"><i class="fas fa-users"></i> The Team</a>
+              <a href="#"><i class="fas fa-book"></i> Our Story</a>
+              <a href="#"><i class="fas fa-briefcase"></i> Career</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="./menu.html">MENUS &#9662; &nbsp;&nbsp; &nbsp; &nbsp;</a>
+            <div class="dropdown-menu">
+              <a href="./menu.html#lunch-section"><i class="fas fa-utensils"></i> LUNCH</a>
+              <a href="./menu.html#dinner-section"><i class="fas fa-pizza-slice"></i> DINNER</a>
+              <a href="./menu.html#dinner-section"><i class="fas fa-ice-cream"></i> DESSERTS</a>
+              <a href="./menu.html#dinner-section"><i class="fas fa-cocktail"></i> DRINKS</a>
+            </div>
+          </div>
+
+          <!-- <a href="#">PRIVATE ROOMS</a> -->
+          <a href="./review.html">RATE US</a>
+        </div>
+        <div class="navCenter">
+          <p>Gary's Eatery</p>
+        </div>
+        <div class="navside" id="navR">
+          <a href="./orderOnline.html"><span class="udrLine">ORDER ONLINE</span>&nbsp;&nbsp;&nbsp;&nbsp; </a>
+          <a href="#">RESERVATIONS &nbsp;&nbsp;&nbsp;&nbsp; </a>
+          <a href="./contact.html">CONTACT US </a>
+        </div>
+      </nav>
+
+
+      <header class="online-banner">
+        <img src="./Images/online.jpg" alt="order online banner">
+        
+       
+        <div class="overlay">
+    
+        <div class="image-cont">
+            <h1>Taste It, Rate It!</h1>
+            <p>Order your favorite meal and share your thoughts!</p>
+            <a href="./review.html"><button>LEAVE A REVIEW</button></a>
+        </div>
+    </div> 
+    </header>
+
+
+    <div class="error-message" id="error-message" style="display: none;"></div>
+
+      <section class="menu-grid3">
+        <div class="menu-category3">
+          <h2>Lunch</h2>
+          <ul>
+            <li id="item1">
+              <span class="meal">Burger with Fries</span>
+              <span class="price">$15</span>
+              <form action="#" method="POST">
+                <input
+                  type="number"
+                  name="quantity"
+                  class="quantity-input"
+                  min="0"
+                  max="10"
+                  value="0"
+                />
+                <button type="submit" class="order-button">Add to Cart</button>
+              </form>
+            </li>
+            <li id="item2">
+              <span class="meal">Grilled Chicken Sandwich</span>
+              <span class="price">$12</span>
+              <form action="#" method="POST">
+                <input
+                  type="number"
+                  name="quantity"
+                  class="quantity-input"
+                  min="0"
+                  max="10"
+                  value="0"
+                /> 
+                <button type="submit" class="order-button">Add to Cart</button>
+              </form>
+            </li>
+            <li id="item3">
+              <span class="meal">Margherita Pizza</span>
+              <span class="price">$14</span>
+
+              <form action="#" method="POST">
+                <input
+                  type="number"
+                  name="quantity"
+                  class="quantity-input"
+                  min="0"
+                  max="10"
+                  value="0"
+                />
+                <button type="submit" class="order-button">Add to Cart</button>
+              </form>
+            </li>
+
+            <li id="item4">
+              <span class="meal">Caesar Salad</span>
+              <span class="price">$10</span>
+
+              <form action="#" method="POST">
+                <input
+                  type="number"
+                  name="quantity"
+                  class="quantity-input"
+                  min="0"
+                  max="10"
+                  value="0"
+                />
+                <button type="submit" class="order-button">Add to Cart</button>
+              </form>
+            </li>
+            <li id="item5">
+              <span class="meal">Fish Tacos</span>
+              <span class="price">$13</span>
+
+              <form action="#" method="POST">
+                <input
+                  type="number"
+                  name="quantity"
+                  class="quantity-input"
+                  min="0"
+                  max="10"
+                  value="0"
+                />
+                <button type="submit" class="order-button">Add to Cart</button>
+              </form>
+            </li>
+            <li id="item6">
+              <span class="meal">Steak Wrap</span>
+              <span class="price">$14</span>
+
+              <form action="#" method="POST">
+                <input
+                  type="number"
+                  name="quantity"
+                  class="quantity-input"
+                  min="0"
+                  max="10"
+                  value="0"
+                />
+                <button type="submit" class="order-button">Add to Cart</button>
+              </form>
+            </li>
+          </ul>
+        </div>
+
+        <div class="menu-category3">
+          <h2>Dinner</h2>
+          <ul>
+            <li id="item7">
+              <span class="meal">Grilled Steak with Vegetables</span>
+              <span class="price">$25</span>
+              <form action="#" method="POST">
+                <input
+                  type="number"
+                  name="quantity"
+                  class="quantity-input"
+                  min="0"
+                  max="10"
+                  value="0"
+                />
+                <button type="submit" class="order-button">Add to Cart</button>
+              </form>
+            </li>
+            <li id="item8">
+              <span class="meal">Garlic Butter Shrimp Pasta</span>
+              <span class="price">$22</span>
+              <form action="#" method="POST">
+                <input
+                  type="number"
+                  name="quantity"
+                  class="quantity-input"
+                  min="0"
+                  max="10"
+                  value="0"
+                />
+                <button type="submit" class="order-button">Add to Cart</button>
+              </form>
+            </li>
+
+            <li id="item9">
+              <span class="meal">Herb-Crusted Salmon</span>
+              <span class="price">$24</span>
+              <form action="#" method="POST">
+                <input
+                  type="number"
+                  name="quantity"
+                  class="quantity-input"
+                  min="0"
+                  max="10"
+                  value="0"
+                />
+                <button type="submit" class="order-button">Add to Cart</button>
+              </form>
+            </li>
+            <li id="item10">
+              <span class="meal">Vegetable Stir Fry</span>
+              <span class="price">$18</span>
+              <form action="#" method="POST">
+                <input
+                  type="number"
+                  name="quantity"
+                  class="quantity-input"
+                  min="0"
+                  max="10"
+                  value="0"
+                />
+                <button type="submit" class="order-button">Add to Cart</button>
+              </form>
+            </li>
+            <li id="item11">
+              <span class="meal">Lamb Chops</span>
+              <span class="price">$28</span>
+              <form action="#" method="POST">
+                <input
+                  type="number"
+                  name="quantity"
+                  class="quantity-input"
+                  min="0"
+                  max="10"
+                  value="0"
+                />
+                <button type="submit" class="order-button">Add to Cart</button>
+              </form>
+            </li>
+            <li id="item12">
+              <span class="meal">Chicken Alfredo</span>
+              <span class="price">$20</span>
+              <form action="#" method="POST">
+                <input
+                  type="number"
+                  name="quantity"
+                  class="quantity-input"
+                  min="0"
+                  max="10"
+                  value="0"
+                />
+                <button type="submit" class="order-button">Add to Cart</button>
+              </form>
+            </li>
+          </ul>
+        </div>
+
+        <div class="menu-category3">
+          <h2>Dessert</h2>
+          <ul>
+            <li id="item13">
+              <span class="meal">Cheesecake</span>
+              <span class="price">$15</span>
+              <form action="#" method="POST">
+                <input
+                  type="number"
+                  name="quantity"
+                  class="quantity-input"
+                  min="0"
+                  max="10"
+                  value="0"
+                />
+                <button type="submit" class="order-button">Add to Cart</button>
+              </form>
+            </li>
+            <li id="item14">
+              <span class="meal">Chocolate Brownie</span>
+              <span class="price">$7</span>
+              <form action="#" method="POST">
+                <input
+                  type="number"
+                  name="quantity"
+                  class="quantity-input"
+                  min="0"
+                  max="10"
+                  value="0"
+                />
+                <button type="submit" class="order-button">Add to Cart</button>
+              </form>
+            </li>
+            <li id="item15">
+              <span class="meal">Fruit Salad</span>
+              <span class="price">$6</span>
+              <form action="#" method="POST">
+                <input
+                  type="number"
+                  name="quantity"
+                  class="quantity-input"
+                  min="0"
+                  max="10"
+                  value="0"
+                />
+                <button type="submit" class="order-button">Add to Cart</button>
+              </form>
+            </li>
+            <li id="item16">
+              <span class="meal">Ice Cream Sundae</span>
+              <span class="price">$9</span>
+              <form action="#" method="POST">
+                <input
+                  type="number"
+                  name="quantity"
+                  class="quantity-input"
+                  min="0"
+                  max="10"
+                  value="0"
+                />
+                <button type="submit" class="order-button">Add to Cart</button>
+              </form>
+            </li>
+            <li id="item17">
+              <span class="meal">Macarons</span>
+              <span class="price">$10</span>
+              <form action="#" method="POST">
+                <input
+                  type="number"
+                  name="quantity"
+                  class="quantity-input"
+                  min="0"
+                  max="10"
+                  value="0"
+                />
+                <button type="submit" class="order-button">Add to Cart</button>
+              </form>
+            </li>
+            <li id="item18">
+              <span class="meal">Lemon Tart</span>
+              <span class="price">$9</span>
+              <form action="#" method="POST">
+                <input
+                  type="number"
+                  name="quantity"
+                  class="quantity-input"
+                  min="0"
+                  max="10"
+                  value="0"
+                />
+                <button type="submit" class="order-button">Add to Cart</button>
+              </form>
+            </li>
+          </ul>
+        </div>
+
+        <div class="menu-category3">
+          <h2>Drinks</h2>
+          <ul>
+            <li id="item19">
+              <span class="meal">Fresh Orange Juice</span>
+              <span class="price">$5</span>
+              <form action="#" method="POST">
+                <input
+                  type="number"
+                  name="quantity"
+                  class="quantity-input"
+                  min="0"
+                  max="10"
+                  value="0"
+                />
+                <button type="submit" class="order-button">Add to Cart</button>
+              </form>
+            </li>
+            <li id="item20">
+              <span class="meal">Mango Smoothie</span>
+              <span class="price">$10</span>
+              <form action="#" method="POST">
+                <input
+                  type="number"
+                  name="quantity"
+                  class="quantity-input"
+                  min="0"
+                  max="10"
+                  value="0"
+                />
+                <button type="submit" class="order-button">Add to Cart</button>
+              </form>
+            </li>
+            <li id="item21">
+              <span class="meal">Coffee</span>
+              <span class="price">$4</span>
+              <form action="#" method="POST">
+                <input
+                  type="number"
+                  name="quantity"
+                  class="quantity-input"
+                  min="0"
+                  max="10"
+                  value="0"
+                />
+                <button type="submit" class="order-button">Add to Cart</button>
+              </form>
+            </li>
+            <li id="item22">
+              <span class="meal">Mango Smoothie</span>
+              <span class="price">$10</span>
+              <form action="#" method="POST">
+                <input
+                  type="number"
+                  name="quantity"
+                  class="quantity-input"
+                  min="0"
+                  max="10"
+                  value="0"
+                />
+                <button type="submit" class="order-button">Add to Cart</button>
+              </form>
+            </li>
+            <li id="item23">
+              <span class="meal">Cappuccino</span>
+              <span class="price">$5</span>
+              <form action="#" method="POST">
+                <input
+                  type="number"
+                  name="quantity"
+                  class="quantity-input"
+                  min="0"
+                  max="10"
+                  value="0"
+                />
+                <button type="submit" class="order-button">Add to Cart</button>
+              </form>
+            </li>
+          </ul>
+        </div>
+        <div class="btnpad">
+        <button id="clear-cart" class="order-button1" >Clear Cart</button>
+      </div>
+      </section>
+      
+     
+      <section class="checkout">
+        <h2>Checkout</h2>
+
+        <div class="error-message" id="error-message" style="display: none;"></div>
+    
+        <div class="form-section">
+          <h3>Personal Information</h3>
+          <form id="checkout-form">
+           
+            <div class="form-group">
+              <label for="name">Full Name:</label>
+              <input type="text" id="name" name="name" required placeholder="walid ali">
+            </div>
+      
+            <div class="form-group">
+              <label for="email">Email Address:</label>
+              <input type="email" id="email" name="email" required placeholder="walidali@example.com">
+            </div>
+      
+            <div class="form-group">
+              <label for="phone">Phone Number:</label>
+              <input type="tel" id="phone" name="phone" required placeholder="(123) 456-7890">
+            </div>
+          </form>
+        </div>
+      
+   
+        <div class="form-section">
+          <h3>Delivery Information</h3>
+      
+          <div class="form-group">
+            <label for="address">Street Address:</label>
+            <input type="text" id="address" name="address" required placeholder="123 Goodridge St">
+          </div>
+      
+          <div class="form-group">
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required placeholder="City">
+          </div>
+      
+          <div class="form-group">
+            <label for="province">Province:</label>
+            <input type="text" id="province" name="province" required placeholder="Province">
+          </div>
+      
+          <div class="form-group">
+            <label for="postal">Postal Code:</label>
+            <input type="text" id="postal" name="postal" required placeholder="A1A1A1">
+          </div>
+        </div>
+      
+    
+        <div class="form-section">
+          <h3>Payment Information</h3>
+      
+          <div class="form-group">
+            <label for="card-name">Cardholder Name:</label>
+            <input type="text" id="card-name" name="card-name" required placeholder="Walid Ali">
+          </div>
+      
+          <div class="form-group">
+            <label for="card-number">Card Number:</label>
+            <input type="text" id="card-number" name="card-number" required placeholder="1234 5678 9012 3456">
+          </div>
+      
+          <div class="form-group">
+            <label for="exp-date">Expiration Date:</label>
+            <input type="text" id="exp-date" name="exp-date" required placeholder="MM/YY">
+          </div>
+      
+          <div class="form-group">
+            <label for="cvc">CVC:</label>
+            <input type="text" id="cvc" name="cvc" required placeholder="123">
+          </div>
+        </div>
+
+        <button type="button" id="proceed-button" class="order-button1">Proceed to Summary</button>
+      
+       
+        <div class="order-summary">
+          <h3>Order Summary</h3>
+          <p>Subtotal: $<span id="subtotal">0.00</span></p>
+          <p>HST (15%): $<span id="hst">0.00</span></p>
+          <p>Promo Discount: $<span id="discount">0.00</span></p>
+          <p><strong>Total: $<span id="total">0.00</span></strong></p>
+      
+
+        </div>
+      
+      
+        <button type="submit" class="order-button1" id="place-order-button">Place Order</button>
+        </form>
+        <div class="order-message" id="order-message" style="display: none;"></div>
+      </section>
+      <!-- <div id="toast" class="toast"></div> -->
+
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-column">
+            <h3>ABOUT</h3>
+            <ul>
+              <li><a href="#">THE GARY DEAL</a></li>
+              <li><a href="#">OUR STORY</a></li>
+              <li><a href="#">THE TEAM</a></li>
+              <li><a href="#">CAREERS</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>MENUS</h3>
+            <ul>
+              <li><a href="./menu.html#lunch-section">LUNCH</a></li>
+              <li><a href="./menu.html#dinner-section">DINNER</a></li>
+              <li><a href="./menu.html#desserts-section">DESSERTS</a></li>
+              <li><a href="./menu.html#drinks-section">DRINKS</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>GET IN TOUCH</h3>
+            <ul>
+              <li><a href="#">PRIVATE ROOMS</a></li>
+              <li><a href="#">GIFT CARD</a></li>
+              <li><a href="#">RESERVATIONS</a></li>
+              <li><a href="./contact.html">CONTACT US</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column contact-info">
+            <h3>CALL US</h3>
+            <p>(123) 456 7890</p>
+            <a href="./orderOnline.html"><button class="buttonborder">ORDER ONLINE</button></a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="payment-icons">
+            <i class="pf pf-visa" title="Visa"></i>
+            <i class="pf pf-mastercard" title="Mastercard"></i>
+            <i class="pf pf-american-express" title="American Express"></i>
+            <i class="pf pf-paypal" title="PayPal"></i>
+            <i class="pf pf-discover" title="Discover"></i>
+          </div>
+
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-yelp"></i></a>
+            <a href="#"><i class="fas fa-utensils"></i></a>
+            <a href="#"><i class="fab fa-tripadvisor"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-bottom-text">
+          <p>© 2024 GARY'S EATERY — All rights reserved.</p>
+        </div>
+      </footer>
+
+      <script src="./script2.js"></script>
+      
+    </div>
+  </body>
+</html>

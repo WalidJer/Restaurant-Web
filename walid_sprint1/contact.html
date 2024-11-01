@@ -1,0 +1,247 @@
+<!-------------------------- Walid Jerjawi--------------
+     ----------------------- Sprint#1------------------
+     --------------------October 20-Novemebr 01--------->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/paymentfont/1.2.5/css/paymentfont.min.css"
+    />
+
+    <title>Gary Blue's Eatery</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./Images/favicon-32x32.png"
+    />
+  </head>
+  <body>
+    <div class="mainbox">
+      <nav class="mainNav">
+        <div class="navside">
+          <a href="./index.html">HOME&nbsp;&nbsp; &nbsp; &nbsp;</a>
+          <div class="dropdown">
+            <a href="#">ABOUT &#9662; &nbsp;&nbsp; &nbsp; </a>
+            <div class="dropdown-menu">
+              <a href="#"><i class="fas fa-user-tie"></i> Gary Deal</a>
+              <a href="#"><i class="fas fa-users"></i> The Team</a>
+              <a href="#"><i class="fas fa-book"></i> Our Story</a>
+              <a href="#"><i class="fas fa-briefcase"></i> Career</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="./menu.html">MENUS &#9662; &nbsp;&nbsp; &nbsp; &nbsp;</a>
+            <div class="dropdown-menu">
+              <a href="./menu.html#lunch-section"
+                ><i class="fas fa-utensils"></i> LUNCH</a
+              >
+              <a href="./menu.html#dinner-section"
+                ><i class="fas fa-pizza-slice"></i> DINNER</a
+              >
+              <a href="./menu.html#dinner-section"
+                ><i class="fas fa-ice-cream"></i> DESSERTS</a
+              >
+              <a href="./menu.html#dinner-section"
+                ><i class="fas fa-cocktail"></i> DRINKS</a
+              >
+            </div>
+          </div>
+
+          <!-- <a href="#">PRIVATE ROOMS</a> -->
+          <a href="./review.html">RATE US</a>
+        </div>
+        <div class="navCenter">
+          <p>Gary's Eatery</p>
+        </div>
+        <div class="navside" id="navR">
+          <a href="./orderOnline.html">ORDER ONLINE&nbsp;&nbsp;&nbsp;&nbsp; </a>
+          <a href="#">RESERVATIONS &nbsp;&nbsp;&nbsp;&nbsp; </a>
+          <a href="./contact.html"><span class="udrLine">CONTACT US</span> </a>
+        </div>
+      </nav>
+
+      <header class="contact-banner">
+        <div class="contact-overlay">
+            <img src="./Images/contact3.webp" alt="Restaurant Banner" height="400px">
+            <div class="text-contact">
+                <h1>CONTACT US</h1>
+                <!-- <p>We're here to help! Reach out to us today.</p> -->
+            </div>
+        </div>
+    </header>
+
+      <section class="contact-us">
+        <div class="container-contact">
+        
+          <div class="contact-form">
+            <h2>SEND US A MESSAGE</h2>
+            <p>We would love to hear from you.</p>
+            <form>
+              <div class="form-contact">
+                <label for="title">Title (optional)</label>
+                <select id="title" name="title">
+                  <option value="Mrs">Mrs.</option>
+                  <option value="Mr">Mr.</option>
+                  <option value="Ms">Ms.</option>
+                  
+                </select>
+              </div>
+      
+              <div class="form-contact">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required />
+              </div>
+      
+              <div class="form-contact">
+                <label for="email">Email address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required />
+              </div>
+      
+              <div class="form-contact">
+                <label for="comments">Question/Comments</label>
+                <textarea id="comments" name="comments" placeholder="Enter your message here" required></textarea>
+              </div>
+      
+
+      
+              <button type="submit" class="buttonborder">SEND MESSAGE</button>
+            </form>
+          </div>
+      
+        
+          <div class="contactInfo">
+            <h2>Phone</h2>
+            <p class="phoneNumber">(123) 456 7890</p>
+      
+            <h2>Address</h2>
+            <address>
+              Avalon Mall<br />
+              40 Goodridge st.<br />
+              St. John's, NL<br />
+              <a href="./contact.html#map-container">Get directions</a>
+            </address>
+      
+            <h2>Hours of Operation</h2>
+            <ul class="hours">
+              <li>Monday - Thursday: 11am - 10pm</li>
+              <li>Friday: 11am - 11pm</li>
+              <li>Saturday: 5pm - 10pm</li>
+              <li>Sunday: 11am - 2pm, 5pm - 9pm</li>
+            </ul>
+          </div>
+      
+          
+          <div class="socialLinks">
+            <h2>Follow us</h2>
+            <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+            <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+            <a href="#"><i class="fab fa-google-plus-g"></i> Google+</a>
+            <a href="#"><i class="fab fa-yelp"></i> Yelp</a>
+          </div>
+        </div>
+      </section>
+
+      <div class="map-container" id="map-container">
+        <h3>Our Location</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51215.53131243687!2d-52.751229942777144!3d47.573920999064335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b0ca3e7e7d6c2e7%3A0x11e97ce081d6a351!2sKeyin%20College%20Corporate%20Office!5e0!3m2!1sen!2sca!4v1730328197418!5m2!1sen!2sca"
+          width="100%"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-column">
+            <h3>ABOUT</h3>
+            <ul>
+              <li><a href="#">THE GARY DEAL</a></li>
+              <li><a href="#">OUR STORY</a></li>
+              <li><a href="#">THE TEAM</a></li>
+              <li><a href="#">CAREERS</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>MENUS</h3>
+            <ul>
+              <li><a href="./menu.html#lunch-section">LUNCH</a></li>
+              <li><a href="./menu.html#dinner-section">DINNER</a></li>
+              <li><a href="./menu.html#desserts-section">DESSERTS</a></li>
+              <li><a href="./menu.html#drinks-section">DRINKS</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>GET IN TOUCH</h3>
+            <ul>
+              <li><a href="#">PRIVATE ROOMS</a></li>
+              <li><a href="#">GIFT CARD</a></li>
+              <li><a href="#">RESERVATIONS</a></li>
+              <li><a href="#">CONTACT US</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column contact-info">
+            <h3>CALL US</h3>
+            <p>(123) 456 7890</p>
+            <a href="./orderOnline.html"
+              ><button class="buttonborder">ORDER ONLINE</button></a
+            >
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="payment-icons">
+            <i class="pf pf-visa" title="Visa"></i>
+            <i class="pf pf-mastercard" title="Mastercard"></i>
+            <i class="pf pf-american-express" title="American Express"></i>
+            <i class="pf pf-paypal" title="PayPal"></i>
+            <i class="pf pf-discover" title="Discover"></i>
+          </div>
+
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-yelp"></i></a>
+            <a href="#"><i class="fas fa-utensils"></i></a>
+            <a href="#"><i class="fab fa-tripadvisor"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-bottom-text">
+          <p>© 2024 GARY'S EATERY — All rights reserved.</p>
+        </div>
+      </footer>
+
+      <script src="./script3.js"></script>
+    </div>
+  </body>
+</html>

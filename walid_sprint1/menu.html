@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/paymentfont/1.2.5/css/paymentfont.min.css"
+    />
+
+    <title>Gary Blue's Eatery</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./Images/favicon-32x32.png"
+    />
+  </head>
+  <body>
+    <div class="mainbox">
+      <nav class="mainNav">
+        <div class="navside">
+          <a href="./index.html" class="navLink">HOME&nbsp;&nbsp; &nbsp; &nbsp;</a>
+          <div class="dropdown">
+            <a href="#" class="navLink">ABOUT &#9662; &nbsp;&nbsp; &nbsp; </a>
+            <div class="dropdown-menu">
+              <a href="#"><i class="fas fa-user-tie"></i> Gary Deal</a>
+              <a href="#"><i class="fas fa-users"></i> The Team</a>
+              <a href="#"><i class="fas fa-book"></i> Our Story</a>
+              <a href="#"><i class="fas fa-briefcase"></i> Career</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="./menu.html"> <span class="udrLine">MENUS</span> &#9662; &nbsp;&nbsp; &nbsp; &nbsp;</a>
+            <div class="dropdown-menu">
+              <a href="./menu.html#lunch-section"><i class="fas fa-utensils"></i> LUNCH</a>
+              <a href="./menu.html#dinner-section"><i class="fas fa-pizza-slice"></i> DINNER</a>
+              <a href="./menu.html#dinner-section"><i class="fas fa-ice-cream"></i> DESSERTS</a>
+              <a href="./menu.html#dinner-section"><i class="fas fa-cocktail"></i> DRINKS</a>
+            </div>
+          </div>
+
+          <!-- <a href="#">PRIVATE ROOMS</a> -->
+          <a href="./review.html" class="navLink">RATE US</a>
+        </div>
+        <div class="navCenter">
+          <p>Gary's Eatery</p>
+        </div>
+        <div class="navside" id="navR">
+          <a href="./orderOnline.html" class="navLink">ORDER ONLINE&nbsp;&nbsp;&nbsp;&nbsp; </a>
+          <a href="#" class="nav-link">RESERVATIONS &nbsp;&nbsp;&nbsp;&nbsp; </a>
+          <a href="./contact.html" class="navLink">CONTACT US </a>
+        </div>
+      </nav>
+
+      <section class="menu-header1">
+        
+        <img src="./Images/menu1-1.jpg" alt="banner for menu" />
+        <div class="overlay">
+        <div class="menu-content1">
+          <h1>OUR MENU</h1>
+          <p>
+            Explore a variety of dishes, crafted with the finest ingredients for
+            every occasion.
+          </p>
+          <a href="./orderOnline.html"><button>ORDER NOW</button></a>
+        </div>
+        </div>
+      </section>
+
+      <section class="menu-grid1">
+        <div class="menu-item1">
+          <img src="./Images/burger.jpg" alt="Burger" />
+          <div class="description1">
+            <h2>GARY'S BURGER WITH FRIES</h2>
+            <p>
+              Juicy beef patty, cheddar cheese, lettuce, tomato, and house sauce
+              <br />
+              on a brioche bun. Served with crispy fries.
+            </p>
+            <p class="price">- 15 -</p>
+          </div>
+        </div>
+
+        <div class="menu-item1">
+          <div class="description1">
+            <h2>GRILLED STEAK WITH VEGETABLES</h2>
+            <p>Perfectly grilled steak, seasoned to perfection, served with sautéed <br>
+               seasonal vegetables and a rich herb butter drizzle.</p>
+            <p class="price">- 25 -</p>
+          </div>
+
+          <img src="./Images/steak.jpg" alt="steak with veggies" />
+        </div>
+
+        <div class="menu-item1">
+          <img src="./Images/cheesecake.jpg" alt="cheesecake" />
+          <div class="description1">
+            <h2>CHEESECAKE</h2>
+            <p>Creamy cheesecake with a graham cracker crust and berry compote.</p>
+            <p class="price">- 15 -</p>
+          </div>
+        </div>
+
+        <div class="menu-item1">
+          <div class="description1">
+            <h2>MANGO SMOOTHIE</h2>
+            <p>Refreshing blend of ripe mangoes, creamy yogurt, and a hint of honey.</p>
+            <p class="price">- 10 -</p>
+          </div>
+
+          <img src="./Images/MANGO.avif" alt="MANGO JUICE" />
+        </div>
+      </section>
+
+      <section class="full-Menu">
+        <span>COMPLETE</span>
+        <h2>GARY'S MENU</h2>
+      </section>
+
+      <section class="menu-grid2">
+        <div class="menu-category2">
+          <h2 id="lunch-section">Lunch</h2>
+          <ul>
+            <li>
+              <span>Burger with Fries</span><span class="price">$15</span>
+            </li>
+            <li>
+              <span>Grilled Chicken Sandwich</span
+              ><span class="price">$12</span>
+            </li>
+            <li>
+              <span>Margherita Pizza</span
+              ><a href="#" class="custom-pizza">Create Your Own Pizza</a
+              ><span class="price">$14</span>
+            </li>
+            <li><span>Caesar Salad</span><span class="price">$10</span></li>
+            <li><span>Fish Tacos</span><span class="price">$13</span></li>
+            <li><span>Steak Wrap</span><span class="price">$14</span></li>
+          </ul>
+        </div>
+
+        <div class="menu-category2">
+          <h2 id="dinner-section">Dinner</h2>
+          <ul>
+            <li>
+              <span>Grilled Steak with Vegetables</span
+              ><span class="price">$25</span>
+            </li>
+            <li>
+              <span>Garlic Butter Shrimp Pasta</span
+              ><span class="price">$22</span>
+            </li>
+            <li>
+              <span>Herb-Crusted Salmon</span><span class="price">$24</span>
+            </li>
+            <li>
+              <span>Vegetable Stir Fry</span><span class="price">$18</span>
+            </li>
+            <li><span>Lamb Chops</span><span class="price">$28</span></li>
+            <li><span>Chicken Alfredo</span><span class="price">$20</span></li>
+          </ul>
+        </div>
+
+        <div class="menu-category2">
+          <h2 id="desserts-section">Dessert</h2>
+          <ul>
+            <li><span>Cheesecake</span><span class="price">$15</span></li>
+            <li><span>Chocolate Brownie</span><span class="price">$7</span></li>
+            <li><span>Fruit Salad</span><span class="price">$6</span></li>
+            <li><span>Ice Cream Sundae</span><span class="price">$9</span></li>
+            <li><span>Macarons</span><span class="price">$10</span></li>
+            <li><span>Lemon Tart</span><span class="price">$9</span></li>
+          </ul>
+        </div>
+
+        <div class="menu-category2">
+          <h2 id="drinks-section">Drinks</h2>
+          <ul>
+            <li>
+              <span>Fresh Orange Juice</span><span class="price">$5</span>
+            </li>
+            <li><span>Lemonade</span><span class="price">$4</span></li>
+            <li><span>Green Tea</span><span class="price">$3</span></li>
+            <li><span>Coffee</span><span class="price">$4</span></li>
+            <li><span>Mango Smoothie</span><span class="price">$10</span></li>
+            <li><span>Cappuccino</span><span class="price">$5</span></li>
+          </ul>
+        </div>
+      </section>
+
+
+
+      <section class="pdf">
+
+        <h2>TAKE OUR MENU WITH YOU</h2>
+        <P>Menu may be subject to seasonal changes without notice.</P>
+
+        <a href="#" class="but"><i class="fas fa-download"></i>&nbsp; &nbsp; PDF MENU</a>
+
+
+      </section>
+
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-column">
+            <h3>ABOUT</h3>
+            <ul>
+              <li><a href="#">THE GARY DEAL</a></li>
+              <li><a href="#">OUR STORY</a></li>
+              <li><a href="#">THE TEAM</a></li>
+              <li><a href="#">CAREERS</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>MENUS</h3>
+            <ul>
+              <li><a href="./menu.html#lunch-section">LUNCH</a></li>
+              <li><a href="./menu.html#dinner-section">DINNER</a></li>
+              <li><a href="./menu.html#desserts-section">DESSERTS</a></li>
+              <li><a href="./menu.html#drinks-section">DRINKS</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>GET IN TOUCH</h3>
+            <ul>
+              <li><a href="#">PRIVATE ROOMS</a></li>
+              <li><a href="#">GIFT CARD</a></li>
+              <li><a href="#">RESERVATIONS</a></li>
+              <li><a href="./contact.html">CONTACT US</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column contact-info">
+            <h3>CALL US</h3>
+            <p>(123) 456 7890</p>
+            <a href="./orderOnline.html"><button class="buttonborder">ORDER ONLINE</button></a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="payment-icons">
+            <i class="pf pf-visa" title="Visa"></i>
+            <i class="pf pf-mastercard" title="Mastercard"></i>
+            <i class="pf pf-american-express" title="American Express"></i>
+            <i class="pf pf-paypal" title="PayPal"></i>
+            <i class="pf pf-discover" title="Discover"></i>
+          </div>
+
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-yelp"></i></a>
+            <a href="#"><i class="fas fa-utensils"></i></a>
+            <a href="#"><i class="fab fa-tripadvisor"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-bottom-text">
+          <p>© 2024 GARY'S EATERY — All rights reserved.</p>
+        </div>
+      </footer>
+
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>
